@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+publish_mode: editorial_workflow
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: "/"
+
+collections:
+  - name: "contenu"
+    label: "Contenu du site"
+    files:
+      - file: "content/issues.json"
+        label: "Numéros (PDF + couvertures)"
+        name: "issues"
+        fields:
+          - label: "Numéros (du plus récent au plus ancien)"
+            name: "issues"
+            widget: "list"
+            summary: "N°{{fields.id}} — {{fields.title}}"
+            fields:
+              - { label: "Numéro", name: "id", widget: "string" }
+              - { label: "Slug (ex: n12)", name: "slug", widget: "string" }
+              - { label: "Titre / Thème", name: "title", widget: "string" }
+              - { label: "Mois (ex: Décembre 2025)", name: "monthLabel", widget: "string" }
+              - { label: "Couverture (image)", name: "cover", widget: "image", required: false }
+              - { label: "PDF du numéro", name: "pdfUrl", widget: "file", required: false }
+              - { label: "Exergue (optionnel)", name: "heroQuote", widget: "text", required: false }
+              - { label: "Définition (optionnel)", name: "definition", widget: "text", required: false }
+              - { label: "Titre de l'extrait (optionnel)", name: "excerptTitle", widget: "string", required: false }
+              - { label: "Texte de l'extrait (optionnel)", name: "excerptText", widget: "text", required: false }
+              - label: "Sommaire (optionnel)"
+                name: "summary"
+                widget: "list"
+                required: false
+                fields:
+                  - { label: "Rubrique/Section", name: "section", widget: "string", required: false }
+                  - { label: "Titre (optionnel)", name: "item", widget: "string", required: false }
+                  - { label: "Auteur (optionnel)", name: "author", widget: "string", required: false }
+
+          - label: "Ancienne version (optionnel)"
+            name: "old_issues"
+            widget: "list"
+            required: false
+            summary: "N°{{fields.id}} — {{fields.title}}"
+            fields:
+              - { label: "Numéro", name: "id", widget: "string" }
+              - { label: "Slug (ex: n1)", name: "slug", widget: "string" }
+              - { label: "Titre / Thème", name: "title", widget: "string" }
+              - { label: "Mois", name: "monthLabel", widget: "string" }
+              - { label: "Couverture (image)", name: "cover", widget: "image", required: false }
+              - { label: "PDF", name: "pdfUrl", widget: "file", required: false }
