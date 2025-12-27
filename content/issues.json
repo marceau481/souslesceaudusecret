@@ -1,0 +1,43 @@
+{
+  "issues": [
+    {
+      "id": "12",
+      "slug": "n12",
+      "title": "Que puis-je offrir ?",
+      "monthLabel": "Décembre 2025",
+      "cover": "assets/uploads/cover-n12.jpg",
+      "pdfUrl": "assets/uploads/n12.pdf",
+      "heroQuote": "Incomplets, mais faits pour un sort plus beau ; ...",
+      "definition": "Selon le Littré : Offrir : Proposer une chose pour qu'on l'accepte...",
+      "excerptTitle": "Gratitude",
+      "excerptText": "Toute offrande est une réponse, l’advenue matérielle d’un sentiment... Gratitude : c’est le nom de ce qui s’exprime dans un cadeau...",
+      "summary": [
+        {
+          "section": "Edito",
+          "author": "Par Valentine Raynal",
+          "item": "Se payer de mots !"
+        },
+        {
+          "section": "« C’est l’intention qui compte »",
+          "author": "Par Galène Hyperion",
+          "item": "Se payer de mots !"
+        },
+        {
+          "section": "« Cadeau et diligence »",
+          "author": "Galène Hyperion",
+          "item": "Métaphysique de comptoir"
+        }
+      ]
+    }
+  ],
+  "old_issues": [
+    {
+      "id": "I",
+      "slug": "n1",
+      "title": "La matière",
+      "monthLabel": "Janvier 2025",
+      "cover": "assets/uploads/cover-n1.jpg",
+      "pdfUrl": "assets/uploads/n1.pdf"
+    }
+  ]
+}

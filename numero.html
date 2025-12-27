@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Numéro — Sous le Sceau du Secret</title>
+  <meta name="description" content="Lecture d'un numéro du journal Sous le Sceau du Secret."/>
+  <link rel="stylesheet" href="assets/styles.css"/>
+</head>
+<body data-page="numero">
+  <a class="skip" href="#content">Passer au contenu</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="index.html">SOUS LE SCEAU DU SECRET</a>
+      <nav class="menu" aria-label="Navigation principale">
+        <a href="dons.html">Dons</a>
+        <a href="numeros.html">Numéros</a>
+        <a href="a-propos.html">A propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="rubriques.html">Les Rubriques en détails</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <section class="grid2" style="margin-top:18px;">
+      <div class="card">
+        <img id="issue-cover" class="cover" src="" alt="Couverture du numéro"/>
+        <p class="muted" id="issue-kicker" style="margin-top:12px;"></p>
+        <h1 class="heroTitle" id="issue-title" style="margin-top:8px;"></h1>
+
+        <hr class="hr"/>
+        <div class="muted">Exergue</div>
+        <p id="issue-quote" class="lead" style="font-size:16px;"></p>
+
+        <hr class="hr"/>
+        <div class="muted">Définition</div>
+        <p id="issue-def" class="lead" style="font-size:16px;"></p>
+      </div>
+
+      <aside class="card">
+        <p class="sectionTitle">Au sommaire</p>
+        <ul id="issue-summary" style="margin:0;padding-left:18px;line-height:1.8;"></ul>
+
+        <hr class="hr"/>
+        <h2 style="margin:0 0 6px;">Le Lire</h2>
+        <p class="muted">(Cliquez sur le bouton pour le lire en PDF)</p>
+        <div class="ctaRow">
+          <a class="btn btnPrimary" id="issue-pdf" href="#" target="_blank" rel="noopener">Lire le numéro</a>
+          <a class="btn" href="numeros.html">Retour aux numéros</a>
+        </div>
+
+        <p class="muted" id="pdf-warning" style="margin-top:12px; display:none;"></p>
+      </aside>
+    </section>
+
+    <footer class="footer">
+      <div class="footerGrid">
+        <div>
+          <div><a href="mailto:contact@souslesceaudusecret.com">contact@souslesceaudusecret.com</a></div>
+          <div class="muted">Paris, 75005</div>
+        </div>
+        <div>
+          <small>© 2025 Sous le Sceau du Secret. Tous droits réservés.</small>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
